@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "server.basePath",
+      "type": "java.lang.String",
+      "description": "Description for server.basePath."
+  }
+] }
