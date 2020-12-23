@@ -16,7 +16,7 @@ import java.util.List;
  * @author CHEN
  * @date 2020/10/13  18:28
  */
-//@RestControllerAdvice
+@RestControllerAdvice
 public class MyCustomizeExceptionHandler {
 
     @ExceptionHandler(CustomizeAuthenticationException.class)
