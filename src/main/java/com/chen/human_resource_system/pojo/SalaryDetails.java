@@ -30,4 +30,5 @@ public class SalaryDetails implements Serializable {
     private Long salary_standard;
 
     private  SalaryStandard salaryStandard;
+
 }

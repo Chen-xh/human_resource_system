@@ -24,4 +24,14 @@ public class OrganizationServiceImpl implements OrganizationService {
         return organizationDao.findAll();
     }
 
+    @Override
+    public List<String> findAll3() {
+        return organizationDao.findAll3();
+    }
+
+    @Override
+    public List<String> findAll2() {
+        return organizationDao.findAll2();
+    }
+
 }

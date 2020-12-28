@@ -34,6 +34,11 @@ public class OrganizationController {
         List<OrganizationLevel1> organization = organizationService.findAll();
         return JsonResult.success().addObject("organization", organization);
     }
-
-
+    @ApiOperation(value = "获取部分机构数据")
+    @GetMapping("/getAll23")
+    public JsonResult getAll23() {
+        List<String> list2 = organizationService.findAll2();
+        List<String> list3 = organizationService.findAll3();
+        return JsonResult.success().addObject("list2", list2).addObject("list3", list3);
+    }
 }

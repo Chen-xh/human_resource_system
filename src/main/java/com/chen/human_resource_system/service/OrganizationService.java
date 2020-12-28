@@ -17,4 +17,6 @@ import java.util.List;
 public interface OrganizationService {
 
     List<OrganizationLevel1> findAll();
+    List<String> findAll3();
+    List<String> findAll2();
 }

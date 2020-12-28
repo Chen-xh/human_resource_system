@@ -40,4 +40,10 @@ public interface OrganizationDao {
     String findNameById2(Long id);
     @Select("select organizationName from organizationlevel3 where ol3Id=#{id}")
     String findNameById3(Long id);
+
+
+    @Select("select organizationName from organizationlevel3 ")
+    List<String> findAll3();
+    @Select("select organizationName from organizationlevel2 ")
+    List<String> findAll2();
 }

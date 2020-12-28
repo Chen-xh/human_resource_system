@@ -12,6 +12,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,6 +41,7 @@ public class SalaryListController {
     @PostMapping("/check")
     public JsonResult check( SalaryList salaryList, String details) {
         salaryListService.updateCheck(salaryList,details,"已复核");
+
         return JsonResult.success();
     }
 
